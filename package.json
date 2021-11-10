@@ -1,0 +1,16 @@
+{
+  "name": "web_service",
+  "version": "1.0.0",
+  "description": "Tugas Web Service CRUD Sederhana",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Rivaiy 3120510901",
+  "license": "ISC"
+}
