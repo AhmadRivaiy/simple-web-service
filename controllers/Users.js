@@ -56,7 +56,8 @@ var userDB = {
                 return callback(err, null);
             }
             else {
-                var sql = `INSERT INTO users (nama_user, nrp, email, tanggal_lahir) VALUES ('${data.nama_user}', '${data.nrp}', '${data.email}', '${data.tanggal_lahir}');`;
+                var sql = `INSERT INTO users (nama_user, nrp, email, tanggal_lahir)
+                    VALUES ('${data.nama_user}', '${data.nrp}', '${data.email}', '${data.tanggal_lahir}');`;
                 var query = conn.query(sql, function (err, result) {
                     conn.end();
                     if (err) {

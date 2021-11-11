@@ -37,7 +37,7 @@ router.get('/get-user/:id_user', (req, res, next) => {
     user.getUser(id, function (err, result) {
         if (!err) {
             res.send({
-                message: 'Tes',
+                message: 'Berhasil Mengambil User!',
                 data: result
             })
         }else{
@@ -59,7 +59,7 @@ router.post('/tambah-user', (req, res, next) => {
     user.addUsers(data, function (err, result) {
         if (!err) {
             res.send({
-                message: 'Tes',
+                message: 'Berhasil Menambah User!',
                 data: result
             })
         }else{
@@ -108,7 +108,7 @@ router.delete('/delete-user/:id_users', (req, res, next) => {
     user.deleteUsers(data, function (err, result) {
         if (!err) {
             res.send({
-                message: 'Berhasil Delete!',
+                message: 'Berhasil Delete User!',
                 data: result
             })
         }else{
